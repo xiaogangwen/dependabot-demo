@@ -12,7 +12,7 @@ jobs:
     steps:
         # Checkout code to get the Dependabot CLI input file
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         # Checkout to a directory to keep the working dir clean for the update.
         with:
           path: repo
@@ -59,7 +59,7 @@ jobs:
     needs: run-dependabot
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download result
         uses: actions/download-artifact@v4
